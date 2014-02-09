@@ -3,22 +3,19 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta description="Ixtapa Condos, Vacation Rentals"/>
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/> <!-- Es lo que se tiene que agregar para dispositivos moviles, responsive design -->
 	<title>Ixtapa Condos, Vacation Rentals</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-	<link href='http://fonts.googleapis.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<header>
-		<figure id="LogoIzq">
-			<img src="img/MenuHeaderIzq.png"/>
-		</figure>
+		<a href="#" class="icon-lista"></a>
 		<figure id="Logo">
 			<img src="img/Logo Condos Retina.jpg"/>
 		</figure>
-		<figure id="LogoDer">
-			<img src="img/ContactUsHeaderDer.png"/>
-		</figure>
+		<a href="#" class="icon-sobre"></a>
 	</header>
 	<nav>
 		<ul>
@@ -34,18 +31,22 @@
 		<div id="Banner">
 			<img src="img/VistaMonarca.jpg" id="ImagenBanner"/>
 		</div>
-			
-		<h2>OUR RENTALS</h2>
-		<h2>________</h2>
-		<figure class="ImagenesDepas">
-			<img src="img/monarca.jpg"/>
-		</figure>
-		<figure class="ImagenesDepas">
-			<img src="img/albatros.jpg"/>
-		</figure>
-		<figure class="ImagenesDepas">
-			<img src="img/marina.jpg"/>
-		</figure>
+		<article class="nombre_pagina">
+			<h2>OUR RENTALS</h2>
+			<strong>________</strong>
+		</article>	
+		
+		<article class="contenedor_imagenes">
+			<figure class="ImagenesDepas">
+				<img src="img/monarca.jpg" class="imagen"/>
+			</figure>
+			<figure class="ImagenesDepas">
+				<img src="img/albatros.jpg"/ class="imagen">
+			</figure>
+			<figure class="ImagenesDepas">
+				<img src="img/marina.jpg" class="imagen"/>
+			</figure>
+		</article>
 		<article>
 			<p class="ParrafoNormal">
 				Looking for a Zihuatanejo beach vacation rental? Here you go folks. These well apportioned and comfortable Zihuatanejo condos will have you relaxing in Mexican style. All you need to do is show up and have a wonderful relaxing vacation.
@@ -62,12 +63,15 @@
 		</article>
 	</section>
 <footer>
-	<p>
+	<article class="pie">
+		<a href="#" class="icon-facebook2"></a>
+	<p class="powered">
 		HTML5 Powered by <a href="www.3punto1417.mx">pi+one</a>
 	</p>
-	<p>
+	<p class="version">
 		Ixtapa Condos 2014
-	</p>	
+	</p>
+	</article>	
 </footer>
 
 </body>

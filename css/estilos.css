@@ -1,3 +1,60 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon/fonts/icomoon.eot?hpmdku');
+	src:url('fonts/icomoon/fonts/icomoon.eot?#iefixhpmdku') format('embedded-opentype'),
+		url('fonts/icomoon/fonts/icomoon.woff?hpmdku') format('woff'),
+		url('fonts/icomoon/fonts/icomoon.ttf?hpmdku') format('truetype'),
+		url('fonts/icomoon/fonts/icomoon.svg?hpmdku#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	font-size: 1.5em;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 2;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-facebook:before {
+	content: "\e600";
+}
+.icon-facebook2:before {
+	content: "\e601";
+}
+.icon-instagram:before {
+	content: "\e602";
+}
+.icon-twitter:before {
+	content: "\e603";
+}
+.icon-twitter2:before {
+	content: "\e604";
+}
+.icon-twitter3:before {
+	content: "\e605";
+}
+.icon-facebook3:before {
+	content: "\e606";
+}
+.icon-sobre:before {
+	content: "\e607";
+}
+.icon-menu:before {
+	content: "\e608";
+}
+.icon-lista:before {
+	content: "\e609";
+}
+
 a 
 {
 	color: #22BCE0;
@@ -22,6 +79,26 @@ header figure
 	float: left;
 }
 */
+header .icon-lista
+{
+	text-decoration: none;
+	color: black;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 1em;
+	margin-left: 1em;
+}
+header .icon-sobre
+{
+	text-decoration: none;
+	color: black;
+	position:absolute;
+	margin-top: 1em;
+	margin-right: 1em;
+	top: 0;
+	right: 0;
+}
 header #Logo img 
 {
 	width: 200px;
@@ -56,9 +133,14 @@ img #ImagenBanner
 {
   	width: 100px;
 }
-.ImagenesDepas
+#contenido .contenedor_imagenes
 {
-	width: 100px;
+	text-align: center;
+	display: inline;
+}
+#contenido .ImagenesDepas .imagen 
+{
+	width: 200px;
 
 }
 h2
@@ -66,7 +148,6 @@ h2
 	font-family: 'Open Sans';
 	font-size: 2.0em;
 	color: #000000;
-	text-align: center;
 }
 nav
 {
@@ -93,7 +174,20 @@ nav ul li a
 	padding: 0.5em;
 	text-decoration: none;
 }
-.ParrafoNormal
+nav ul li a:hover
+{
+	color: #2f94d8;
+}
+nav ul li a:selected
+{
+	color: #1b70b1;
+}
+#contenido .nombre_pagina
+{
+	text-align: center;
+	margin-top: 0;
+}
+#contenido .ParrafoNormal
 {
 	font-family: 'Georgia';
 	font-size: 16px;
@@ -102,7 +196,7 @@ nav ul li a
 	text-align: left;
 	margin: 2em 3em 2em 3em;
 }
-.ParrafoMargen
+#contenido .ParrafoMargen
 {
 	font-family: 'Georgia';
 	font-size: 16px;
@@ -112,24 +206,41 @@ nav ul li a
 	margin-right: 7.0em;
 	margin-left: 7.0em;
 }
-footer p:first-child /* A esto se le llama Pseudoelementos */
+
+footer .pie .icon-facebook2 
+{
+	text-decoration: none;
+	color: black;
+	margin: 2em;
+}
+footer .pie .powered /* p:first-child p:last-child A esto se le llama Pseudoelementos */
 {
 	text-align: right;
 	font-size: 12px;
 	margin-bottom: 0;
 }
-footer p:last-child
+footer .pie .version
 {
 	text-align: center;
 	font-size: 12px;
 	margin-top: 0;
 } 
-footer p:last-child:after
+footer .pie .version:after
 {
 	content: " -";
 }
-footer p:last-child:before
+footer .pie .version:before
 {
 	content: "- ";
+}
+
+/* Media Queries, Responsive Design */
+@media screen and (min-width: 880px){
+	body{
+		background: red;
+	}
+	#contenido{
+		overflow: hidden;
+	}
 }
 
