@@ -206,6 +206,27 @@ nav ul li a:selected
 	margin-right: 7.0em;
 	margin-left: 7.0em;
 }
+/************ FORMULARIO **************/
+#contenido .formulario{
+	text-align: center;
+	padding: 1em;
+	display: block;
+}
+#contenido .formulario input{
+	border-radius: 5px;
+	padding: 0.2em 0.6em;
+}
+#contenido .formulario input[type="text"]{
+	border: 1px solid #888;
+}
+#contenido .formulario input[type="submit"]{
+	background: #22BCE0;
+	border: 1px solid #22BCE0;
+	box-shadow: rgba(0,0,0,0.5) 5px 5px 20px;
+	font-style: italic;
+	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
+	color: white;
+}
 
 footer .pie .icon-facebook2 
 {
