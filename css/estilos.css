@@ -68,10 +68,9 @@ body
 }
 header
 {
-	overflow: hidden;
-	height: 130px;
-	/*padding: 1em;*/
-	position: relative;
+	/* overflow: hidden; */
+	height: 645px;
+	background: #FFFFFF;
 }
 /*
 header figure
@@ -86,53 +85,42 @@ header .icon-lista
 	position: absolute;
 	top: 0;
 	left: 0;
-	margin-top: 1em;
-	margin-left: 1em;
+	margin-top: 40px;
+	margin-left: 20px;
 }
 header .icon-sobre
 {
 	text-decoration: none;
 	color: black;
 	position:absolute;
-	margin-top: 1em;
-	margin-right: 1em;
+	margin-top: 40px;
+	margin-right: 20px;
 	top: 0;
 	right: 0;
 }
 header #Logo img 
 {
-	width: 200px;
+	width: 228px;
 	position: absolute;
 	left: 39%;
 	right: 50%;
 
 }
-header #LogoIzq img 
+
+header #navegacion
+{
+	position: relative;
+	top: 105px;
+	padding: 10px;
+}
+header #banner
 {
 	position: absolute;
-	top: 0;
-	left: 0;
-	margin-top: 2em;
-	margin-left: 2em;
-}
-header #LogoDer img 
-{
-	position:absolute;
-	margin-top: 2em;
-	margin-right: 2em;
-	top: 0;
-	right: 0;
-}
-div #Banner 
-{
+	text-align: center;
+	top: 155px;
 	width: 100%;
-	background: #FF0000;
+}
 
-}
-img #ImagenBanner
-{
-  	width: 100px;
-}
 #contenido .contenedor_imagenes
 {
 	text-align: center;
@@ -258,7 +246,7 @@ footer .pie .version:before
 /* Media Queries, Responsive Design */
 @media screen and (min-width: 880px){
 	body{
-		background: red;
+		background: #f3f3f3;
 	}
 	#contenido{
 		overflow: hidden;
