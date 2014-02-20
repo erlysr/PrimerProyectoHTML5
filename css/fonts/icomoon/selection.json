@@ -228,6 +228,29 @@
 			},
 			"setIdx": 3,
 			"iconIdx": 44
+		},
+		{
+			"icon": {
+				"paths": [
+					"M0 384h1024v256h-1024z"
+				],
+				"tags": [
+					"minus",
+					"remove",
+					"delete"
+				],
+				"grid": 16
+			},
+			"properties": {
+				"id": 34,
+				"order": 11,
+				"prevSize": 32,
+				"code": 58890,
+				"name": "minus",
+				"ligatures": ""
+			},
+			"setIdx": 0,
+			"iconIdx": 34
 		}
 	],
 	"height": 1024,
