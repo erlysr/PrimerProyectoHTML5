@@ -54,6 +54,9 @@
 .icon-lista:before {
 	content: "\e609";
 }
+.icon-minus:before {
+	content: "\e60a";
+}
 
 a 
 {
@@ -69,7 +72,7 @@ body
 header
 {
 	/* overflow: hidden; */
-	height: 645px;
+	height: 155px;
 	background: #FFFFFF;
 }
 /*
@@ -113,28 +116,70 @@ header #navegacion
 	top: 105px;
 	padding: 10px;
 }
-header #banner
-{
-	position: absolute;
-	text-align: center;
-	top: 155px;
-	width: 100%;
-}
 
-#contenido .contenedor_imagenes
+#imagen_banner
+{
+	background: url(../img/VistaMonarca.jpg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 480px;
+}
+#imagen_banner_monarca
+{
+	background: url(../img/monarca_apartment/T_Marques.jpeg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 480px;
+}
+#imagen_banner_albatros
+{
+	background: url(../img/albatros_villa/albatros.jpeg);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	text-align: center;
+	height: 480px;
+}
+#contenedor_fotos
 {
 	text-align: center;
+	
+}
+#contenedor_fotos .fotos
+{
 	display: inline;
 }
-#contenido .ImagenesDepas .imagen 
+#contenedor_fotos .fotos .foto  
 {
 	width: 200px;
+	height: 200px;
+	padding: 3px;
+
+}
+#contenedor_fotos .nombre_pagina .p1 
+{
+	font-family: 'Open Sans';	
+	font-size: 25px;
+	letter-spacing: 5px;
+	line-height: 0px;
+}
+#contenedor_fotos .nombre_pagina .p2 
+{
+	line-height: 0px;
+}
+h1
+{
+	font-family: 'Open Sans';
+	font-size: 30px;
+	color: #000000;
+	letter-spacing: 2px;
 
 }
 h2
 {
 	font-family: 'Open Sans';
-	font-size: 2.0em;
+	font-size: 20px;
 	color: #000000;
 }
 nav
@@ -170,11 +215,8 @@ nav ul li a:selected
 {
 	color: #1b70b1;
 }
-#contenido .nombre_pagina
-{
-	text-align: center;
-	margin-top: 0;
-}
+
+
 #contenido .ParrafoNormal
 {
 	font-family: 'Georgia';
@@ -215,7 +257,10 @@ nav ul li a:selected
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
 	color: white;
 }
-
+footer .pie0
+{
+	text-align: center;
+}
 footer .pie .icon-facebook2 
 {
 	text-decoration: none;
