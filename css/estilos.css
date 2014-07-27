@@ -1,61 +1,162 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/icomoon/fonts/icomoon.eot?hpmdku');
-	src:url('fonts/icomoon/fonts/icomoon.eot?#iefixhpmdku') format('embedded-opentype'),
-		url('fonts/icomoon/fonts/icomoon.woff?hpmdku') format('woff'),
-		url('fonts/icomoon/fonts/icomoon.ttf?hpmdku') format('truetype'),
-		url('fonts/icomoon/fonts/icomoon.svg?hpmdku#icomoon') format('svg');
+	src:url('../fonts/icomoon/fonts/icomoon.eot?-46gtcc');
+	src:url('../fonts/icomoon/fonts/icomoon.eot?#iefix-46gtcc') format('embedded-opentype'),
+		url('../fonts/icomoon/fonts/icomoon.woff?-46gtcc') format('woff'),
+		url('../fonts/icomoon/fonts/icomoon.ttf?-46gtcc') format('truetype'),
+		url('../fonts/icomoon/fonts/icomoon.svg?-46gtcc#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 [class^="icon-"], [class*=" icon-"] {
 	font-family: 'icomoon';
-	font-size: 1.5em;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
 	text-transform: none;
-	line-height: 2;
+	line-height: 1;
 
 	/* Better Font Rendering =========== */
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
 
-.icon-facebook:before {
-	content: "\e600";
-}
-.icon-facebook2:before {
+.icon-users:before {
 	content: "\e601";
 }
-.icon-instagram:before {
+.icon-users2:before {
 	content: "\e602";
 }
-.icon-twitter:before {
+.icon-user:before {
 	content: "\e603";
 }
-.icon-twitter2:before {
+.icon-screen:before {
 	content: "\e604";
 }
-.icon-twitter3:before {
-	content: "\e605";
-}
-.icon-facebook3:before {
-	content: "\e606";
-}
-.icon-sobre:before {
-	content: "\e607";
-}
-.icon-menu:before {
-	content: "\e608";
-}
 .icon-lista:before {
-	content: "\e609";
+	content: "\f039";
 }
 .icon-minus:before {
+	content: "\f068";
+}
+.icon-facebook2:before {
+	content: "\f082";
+}
+.icon-group:before {
+	content: "\f0c0";
+}
+.icon-columns:before {
+	content: "\f0db";
+}
+.icon-ge:before {
+	content: "\f1d1";
+}
+.icon-inbox:before {
+	content: "\f0cf";
+}
+.icon-sobre:before {
+	content: "\f03b";
+}
+.icon-organization:before {
+	content: "\f037";
+}
+.icon-person:before {
+	content: "\f018";
+}
+.icon-sign-in:before {
+	content: "\f036";
+}
+.icon-versions:before {
+	content: "\f064";
+}
+.icon-inbox2:before {
+	content: "\e605";
+}
+.icon-monitor:before {
+	content: "\e606";
+}
+.icon-home2:before {
+	content: "\e607";
+}
+.icon-connection:before {
+	content: "\e608";
+}
+.icon-feed:before {
+	content: "\e609";
+}
+.icon-screen2:before {
 	content: "\e60a";
+}
+.icon-drawer:before {
+	content: "\e60b";
+}
+.icon-users3:before {
+	content: "\e60c";
+}
+.icon-users4:before {
+	content: "\e60d";
+}
+.icon-contract:before {
+	content: "\e60e";
+}
+.icon-food:before {
+	content: "\e60f";
+}
+.icon-powercord:before {
+	content: "\e610";
+}
+.icon-globe:before {
+	content: "\e611";
+}
+.icon-exit:before {
+	content: "\e612";
+}
+.icon-feed2:before {
+	content: "\e613";
+}
+.icon-monitor2:before {
+	content: "\e614";
+}
+.icon-inbox3:before {
+	content: "\e615";
+}
+.icon-microwave:before {
+	content: "\e616";
+}
+.icon-oven:before {
+	content: "\e617";
+}
+.icon-washingmachine:before {
+	content: "\e618";
+}
+.icon-lamp:before {
+	content: "\e619";
+}
+.icon-book:before {
+	content: "\e61a";
+}
+.icon-collapse:before {
+	content: "\e61b";
+}
+.icon-globe2:before {
+	content: "\e61c";
+}
+.icon-navigation:before {
+	content: "\e61d";
+}
+.icon-display:before {
+	content: "\e61e";
+}
+.icon-stack:before {
+	content: "\e61f";
+}
+.icon-food2:before {
+	content: "\e620";
+}
+.icon-world:before {
+	content: "\e621";
 }
 
 a 
@@ -65,9 +166,10 @@ a
 body
 {
     background: #FFFFFF;
-    font-family: Arial;
+    font-family: 'Open Sans';
     font-size: 16px;
     margin: 0;
+    color: #aaaeb0;
 }
 header
 {
@@ -75,12 +177,7 @@ header
 	height: 155px;
 	background: #FFFFFF;
 }
-/*
-header figure
-{
-	float: left;
-}
-*/
+
 header .icon-lista
 {
 	text-decoration: none;
@@ -163,10 +260,12 @@ header #navegacion
 	font-size: 25px;
 	letter-spacing: 5px;
 	line-height: 0px;
+	color: #565a5c;
 }
 #contenedor_fotos .nombre_pagina .p2 
 {
 	line-height: 0px;
+	color: #565a5c;
 }
 h1
 {
@@ -216,10 +315,63 @@ nav ul li a:selected
 	color: #1b70b1;
 }
 
-
+/* SECCION INTRO */
+#intro 
+{
+	background: white;
+	text-align: center;
+	font-family: 'Open Sans';
+}
+#intro a
+{
+	text-decoration: none;
+}
+#intro .perfil .foto
+{
+	display: inline-block;
+	text-align: center;
+}
+#intro .perfil .foto img
+{
+	border-radius: 50%;
+	height: 112.5px;
+	width: 112.5px;
+}
+#intro .perfil .datos-intro
+{
+	display: inline-block;
+	text-align: left;
+}
+#intro .perfil .datos-intro .titulo-intro
+{
+	color: #565a5c;
+	font-family: "Roboto";
+	font-weight: 400;
+	font-size: 1.5em;
+}	
+#intro .perfil .datos-intro .ubicacion-intro
+{
+	font-family: "Roboto";
+	font-weight: 300;
+	font-size: .8em;
+}
+#intro .perfil .datos-intro .iconos-intro div
+{
+	display: inline-block;
+	font-size: 3em;
+}
+#intro .perfil .datos-intro .etiquetas-intro div
+{
+	display: inline-block;
+}
+/* SECCION CONTENIDO */
+#contenido
+{
+	background: #f5f5f5;
+}
 #contenido .ParrafoNormal
 {
-	font-family: 'Georgia';
+	font-family: 'Open Sans';
 	font-size: 16px;
 	font-style: italic;
 	line-height: 1.6em;
@@ -228,7 +380,7 @@ nav ul li a:selected
 }
 #contenido .ParrafoMargen
 {
-	font-family: 'Georgia';
+	font-family: 'Open Sans';
 	font-size: 16px;
 	font-style: italic;
 	line-height: 1.6em;

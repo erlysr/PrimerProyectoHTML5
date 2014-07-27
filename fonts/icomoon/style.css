@@ -1,0 +1,160 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-46gtcc');
+	src:url('fonts/icomoon.eot?#iefix-46gtcc') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-46gtcc') format('woff'),
+		url('fonts/icomoon.ttf?-46gtcc') format('truetype'),
+		url('fonts/icomoon.svg?-46gtcc#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-users:before {
+	content: "\e601";
+}
+.icon-users2:before {
+	content: "\e602";
+}
+.icon-user:before {
+	content: "\e603";
+}
+.icon-screen:before {
+	content: "\e604";
+}
+.icon-lista:before {
+	content: "\f039";
+}
+.icon-minus:before {
+	content: "\f068";
+}
+.icon-facebook2:before {
+	content: "\f082";
+}
+.icon-group:before {
+	content: "\f0c0";
+}
+.icon-columns:before {
+	content: "\f0db";
+}
+.icon-ge:before {
+	content: "\f1d1";
+}
+.icon-inbox:before {
+	content: "\f0cf";
+}
+.icon-sobre:before {
+	content: "\f03b";
+}
+.icon-organization:before {
+	content: "\f037";
+}
+.icon-person:before {
+	content: "\f018";
+}
+.icon-sign-in:before {
+	content: "\f036";
+}
+.icon-versions:before {
+	content: "\f064";
+}
+.icon-inbox2:before {
+	content: "\e605";
+}
+.icon-monitor:before {
+	content: "\e606";
+}
+.icon-home2:before {
+	content: "\e607";
+}
+.icon-connection:before {
+	content: "\e608";
+}
+.icon-feed:before {
+	content: "\e609";
+}
+.icon-screen2:before {
+	content: "\e60a";
+}
+.icon-drawer:before {
+	content: "\e60b";
+}
+.icon-users3:before {
+	content: "\e60c";
+}
+.icon-users4:before {
+	content: "\e60d";
+}
+.icon-contract:before {
+	content: "\e60e";
+}
+.icon-food:before {
+	content: "\e60f";
+}
+.icon-powercord:before {
+	content: "\e610";
+}
+.icon-globe:before {
+	content: "\e611";
+}
+.icon-exit:before {
+	content: "\e612";
+}
+.icon-feed2:before {
+	content: "\e613";
+}
+.icon-monitor2:before {
+	content: "\e614";
+}
+.icon-inbox3:before {
+	content: "\e615";
+}
+.icon-microwave:before {
+	content: "\e616";
+}
+.icon-oven:before {
+	content: "\e617";
+}
+.icon-washingmachine:before {
+	content: "\e618";
+}
+.icon-lamp:before {
+	content: "\e619";
+}
+.icon-book:before {
+	content: "\e61a";
+}
+.icon-collapse:before {
+	content: "\e61b";
+}
+.icon-globe2:before {
+	content: "\e61c";
+}
+.icon-navigation:before {
+	content: "\e61d";
+}
+.icon-display:before {
+	content: "\e61e";
+}
+.icon-stack:before {
+	content: "\e61f";
+}
+.icon-food2:before {
+	content: "\e620";
+}
+.icon-world:before {
+	content: "\e621";
+}
