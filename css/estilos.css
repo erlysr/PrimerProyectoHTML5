@@ -318,52 +318,116 @@ nav ul li a:selected
 /* SECCION INTRO */
 #intro 
 {
-	background: white;
-	text-align: center;
-	font-family: 'Open Sans';
+	background: #FFFFFF;
+	font-family: "Roboto";
+	font-weight: 300;
+	font-size: .9em;
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-top: 20px;
+	overflow: hidden;
 }
 #intro a
 {
 	text-decoration: none;
 }
+#intro .perfil
+{
+	position: relative;
+	text-align: center;
+}
 #intro .perfil .foto
 {
-	display: inline-block;
-	text-align: center;
+	float: left;
+}
+#intro .perfil .foto .host
+{
+	padding: 0.4em 0 0 0;
+	margin: 0 0 0 0;
+}
+#intro .perfil .foto .avatar
+{
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	
 }
 #intro .perfil .foto img
 {
 	border-radius: 50%;
-	height: 112.5px;
-	width: 112.5px;
+	height: 100px;
+	width: 100px;
+}
+#intro .perfil .foto .nombre-host
+{
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
 }
 #intro .perfil .datos-intro
 {
-	display: inline-block;
 	text-align: left;
 }
 #intro .perfil .datos-intro .titulo-intro
 {
 	color: #565a5c;
-	font-family: "Roboto";
 	font-weight: 400;
 	font-size: 1.5em;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	min-height: 2px;
 }	
+#intro .perfil .datos-intro .datos-ubicacion-intro
+{
+	padding: 0 0 3em 0;
+	margin: 0 0 0 0;
+}
 #intro .perfil .datos-intro .ubicacion-intro
 {
-	font-family: "Roboto";
-	font-weight: 300;
-	font-size: .8em;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
 }
 #intro .perfil .datos-intro .iconos-intro div
 {
 	display: inline-block;
-	font-size: 3em;
+	font-size: 2em;
+	text-align: center;
+	width: 80px; /* La minima resolucion son 340px/4 iphone */
+}
+#intro .perfil .datos-intro .iconos-intro a
+{
+
 }
 #intro .perfil .datos-intro .etiquetas-intro div
 {
 	display: inline-block;
+    padding-bottom: .9em;
+	margin: 0 0 0 0;
+	text-align: center;
+	width: 80px;
 }
+/*
+#intro .perfil .datos-intro .etiquetas-intro .etiqueta1-intro
+{
+ 	padding-left: 0em;
+ 	padding-right: 1em;
+}
+#intro .perfil .datos-intro .etiquetas-intro .etiqueta2-intro
+{
+	padding-left: 0em;
+ 	padding-right: 1em;	
+}
+#intro .perfil .datos-intro .etiquetas-intro .etiqueta3-intro
+{
+	padding-left: 0.5em;
+ 	padding-right: 1em;
+}
+#intro .perfil .datos-intro .etiquetas-intro .etiqueta4-intro
+{
+	padding-left: 1.2em;
+ 	padding-right: 1em;
+}*/
 /* SECCION CONTENIDO */
 #contenido
 {
@@ -440,13 +504,31 @@ footer .pie .version:before
 	content: "- ";
 }
 
-/* Media Queries, Responsive Design */
-@media screen and (min-width: 880px){
-	body{
-		background: #f3f3f3;
-	}
-	#contenido{
-		overflow: hidden;
+@media screen and (max-width: 800px){
+	#intro
+	{
+		padding-left: 3%;
+		padding-right: 3%;
+		width: 94%;
 	}
 }
-
+@media screen and (max-width: 640px){
+	#intro
+	{
+		padding-left: 0%;
+		padding-right: 0%;
+		width: 100%;
+	}
+	#intro .perfil .foto
+	{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	#intro .perfil .datos-intro
+	{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+}
