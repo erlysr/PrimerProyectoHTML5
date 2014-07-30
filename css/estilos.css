@@ -286,6 +286,12 @@ h2
 	font-size: 18px;
 	padding-top: 1em;
 }
+hr {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border: 0;
+	border-top: 1px solid #dce0e0;
+}
 nav
 {
 	font-family: 'Open Sans';
@@ -444,6 +450,7 @@ nav ul li a:selected
 {
 	background: #f5f5f5;
 	width: 100%;
+	padding-bottom: 2em;
 }
 #contenido a
 {
@@ -464,30 +471,68 @@ nav ul li a:selected
   	margin: 0 auto;
   	max-width: 1000px;
 }
-#contenido .contenido-container .foto-principal-container-in
+#contenido .contenido-container .foto-principal-container,
+#contenido .contenido-container .foto-secundaria-container
 {
-	padding-left: 5%;
-	padding-right: 5%;
-	width: 90%;
-	overflow: hidden;
+	color: #aaaeb0;
+	padding: 0 0 0 0;
 }
-#contenido .contenido-container .foto-principal-container .foto-principal
+#contenido .contenido-container .foto-principal-container figure,
+#contenido .contenido-container .foto-secundaria-container figure
 {
-	text-align: left;
-	padding: 20px 0 0 0;
-	margin: 0 0 0 0;
+    margin: 1.5em 0 0 0;
+
 }
-#contenido .contenido-container .foto-principal-container .foto-principal img
+#contenido .contenido-container .foto-principal-container img,
+#contenido .contenido-container .foto-secundaria-container img
 {
+	/* Para escalarla cuando se mueva su ancho */
 	max-width: 100%;
 	height: auto;
 }
-
-#contenido .contenido-container .foto-principal-container p
+#contenido .contenido-container .specs-container .icono
 {
-	color: #aaaeb0;
-	text-align: left;
-	margin-top: .2em;
+	font-size: 1.5em;
+	padding-right: .5em;
+}
+#contenido .contenido-container .specs-container .specs-rende2
+{
+	
+}
+#contenido .contenido-container .specs-container .specs-rende2 .specs-col1
+{
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
+} 
+#contenido .contenido-container .specs-container .specs-rende2 .specs-col2
+{
+	display: inline-block;
+	width: 600px;
+	vertical-align: top;
+}
+#contenido .contenido-container .specs-container .specs-rende3
+{
+	
+}
+#contenido .contenido-container .specs-container .specs-rende3 .specs-col1
+{
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
+} 
+#contenido .contenido-container .specs-container .specs-rende3 .specs-col2
+{
+	display: inline-block;
+	width: 600px;
+	vertical-align: top;
+}
+#contenido .contenido-container .specs-container .specs-rende3 .specs-col21, 
+#contenido .contenido-container .specs-container .specs-rende3 .specs-col22
+{
+	display: inline-block;
+	width: 298px;
+	vertical-align: top;
 }
 /* ----------------------------------------------*/
 #contenido .ParrafoNormal
@@ -530,19 +575,20 @@ nav ul li a:selected
 	text-shadow: rgba(0,0,0,0.5) 2px 2px 5px;
 	color: white;
 }
-footer .pie0
+footer .pie .redes-sociales
 {
-	text-align: center;
+	text-align: right;
 }
 footer .pie .icon-facebook2 
 {
 	text-decoration: none;
 	color: black;
 	margin: 2em;
+	font-size: 2em;
 }
 footer .pie .powered /* p:first-child p:last-child A esto se le llama Pseudoelementos */
 {
-	text-align: right;
+	text-align: left;
 	font-size: 12px;
 	margin-bottom: 0;
 }
