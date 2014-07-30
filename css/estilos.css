@@ -168,7 +168,8 @@ body
     background: #FFFFFF;
     font-family: 'Open Sans';
     font-size: 16px;
-    margin: 0;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
     color: #aaaeb0;
 }
 header
@@ -216,6 +217,7 @@ header #navegacion
 
 #imagen_banner
 {
+	background: #f5f5f5;
 	background: url(../img/VistaMonarca.jpg);
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -224,6 +226,7 @@ header #navegacion
 }
 #imagen_banner_monarca
 {
+	background: #f5f5f5;
 	background: url(../img/monarca_apartment/T_Marques.jpeg);
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -232,6 +235,7 @@ header #navegacion
 }
 #imagen_banner_albatros
 {
+	background: #f5f5f5;
 	background: url(../img/albatros_villa/albatros.jpeg);
 	background-size: 100%;
 	background-repeat: no-repeat;
@@ -241,7 +245,7 @@ header #navegacion
 #contenedor_fotos
 {
 	text-align: center;
-	
+	background: #f5f5f5;
 }
 #contenedor_fotos .fotos
 {
@@ -277,9 +281,10 @@ h1
 }
 h2
 {
+	color: #565a5c;
 	font-family: 'Open Sans';
-	font-size: 20px;
-	color: #000000;
+	font-size: 18px;
+	padding-top: 1em;
 }
 nav
 {
@@ -322,31 +327,36 @@ nav ul li a:selected
 	font-family: "Roboto";
 	font-weight: 300;
 	font-size: .9em;
-	width: 80%;
-	padding-left: 10%;
-	padding-right: 10%;
 	padding-top: 20px;
 	overflow: hidden;
+	margin: 0 auto;
 }
 #intro a
 {
 	text-decoration: none;
 }
-#intro .perfil
+#intro .perfil-container
 {
 	position: relative;
-	text-align: center;
-}
-#intro .perfil .foto
+	/* Para centrarlo y ponerle un padding a los lados */
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 80%;
+  	/* Para que el contenedor sea maximo a 1000px y siempre quede centrado */
+  	margin: 0 auto;
+  	max-width: 1000px;
+  }
+#intro .perfil-container .foto
 {
 	float: left;
 }
-#intro .perfil .foto .host
+#intro .perfil-container .foto .host
 {
 	padding: 0.4em 0 0 0;
 	margin: 0 0 0 0;
+	text-align: center;
 }
-#intro .perfil .foto .avatar
+#intro .perfil-container .foto .avatar
 {
 	margin-bottom: 0px;
 	margin-top: 0px;
@@ -354,22 +364,23 @@ nav ul li a:selected
 	padding-top: 0px;
 	
 }
-#intro .perfil .foto img
+#intro .perfil-container .foto img
 {
 	border-radius: 50%;
 	height: 100px;
 	width: 100px;
 }
-#intro .perfil .foto .nombre-host
+#intro .perfil-container .foto .nombre-host
 {
 	padding: 0 0 0 0;
 	margin: 0 0 0 0;
+	text-align: center;
 }
-#intro .perfil .datos-intro
+#intro .perfil-container .datos-intro
 {
 	text-align: left;
 }
-#intro .perfil .datos-intro .titulo-intro
+#intro .perfil-container .datos-intro .titulo-intro
 {
 	color: #565a5c;
 	font-weight: 400;
@@ -378,28 +389,28 @@ nav ul li a:selected
 	margin: 0 0 0 0;
 	min-height: 2px;
 }	
-#intro .perfil .datos-intro .datos-ubicacion-intro
+#intro .perfil-container .datos-intro .datos-ubicacion-intro
 {
 	padding: 0 0 3em 0;
 	margin: 0 0 0 0;
 }
-#intro .perfil .datos-intro .ubicacion-intro
+#intro .perfil-container .datos-intro .ubicacion-intro
 {
 	padding: 0 0 0 0;
 	margin: 0 0 0 0;
 }
-#intro .perfil .datos-intro .iconos-intro div
+#intro .perfil-container .datos-intro .iconos-intro div
 {
 	display: inline-block;
 	font-size: 2em;
 	text-align: center;
 	width: 80px; /* La minima resolucion son 340px/4 iphone */
 }
-#intro .perfil .datos-intro .iconos-intro a
+#intro .perfil-container .datos-intro .iconos-intro a
 {
 
 }
-#intro .perfil .datos-intro .etiquetas-intro div
+#intro .perfil-container .datos-intro .etiquetas-intro div
 {
 	display: inline-block;
     padding-bottom: .9em;
@@ -432,7 +443,53 @@ nav ul li a:selected
 #contenido
 {
 	background: #f5f5f5;
+	width: 100%;
 }
+#contenido a
+{
+	text-decoration: none;
+	font-weight: bold;
+}
+#contenido .contenido-container
+{
+	color: #565a5c;
+	font-family: "Roboto";
+	font-weight: 300;
+	font-size: .9em;
+	/* Para centrarlo y ponerle un padding a los lados */
+	padding-left: 10%;
+	padding-right: 10%;
+	width: 80%;
+  	/* Para que el contenedor sea maximo a 1000px y siempre quede centrado */
+  	margin: 0 auto;
+  	max-width: 1000px;
+}
+#contenido .contenido-container .foto-principal-container-in
+{
+	padding-left: 5%;
+	padding-right: 5%;
+	width: 90%;
+	overflow: hidden;
+}
+#contenido .contenido-container .foto-principal-container .foto-principal
+{
+	text-align: left;
+	padding: 20px 0 0 0;
+	margin: 0 0 0 0;
+}
+#contenido .contenido-container .foto-principal-container .foto-principal img
+{
+	max-width: 100%;
+	height: auto;
+}
+
+#contenido .contenido-container .foto-principal-container p
+{
+	color: #aaaeb0;
+	text-align: left;
+	margin-top: .2em;
+}
+/* ----------------------------------------------*/
 #contenido .ParrafoNormal
 {
 	font-family: 'Open Sans';
@@ -503,32 +560,60 @@ footer .pie .version:before
 {
 	content: "- ";
 }
-
-@media screen and (max-width: 800px){
-	#intro
+/*
+@media screen and (max-width: 1000px){
+	#intro .perfil-container
 	{
-		padding-left: 3%;
-		padding-right: 3%;
-		width: 94%;
+		padding-left: 5%;
+		padding-right: 5%;
+		width: 90%;
+	}
+	#contenido .contenido-container
+	{
+		padding-left: 5%;
+		padding-right: 5%;
+		width: 90%;
+	}
+} */
+@media screen and (max-width: 800px){
+	#intro .perfil-container
+	{
+		padding-left: 5%;
+		padding-right: %;
+		width: 90%;
+	}
+	#intro .perfil-container .foto
+	{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	#intro .perfil-container .datos-intro
+	{
+		display: block;
+		width: 100%;
+		text-align: center;
+	}
+	#contenido .contenido-container
+	{
+		padding-left: 5%;
+		padding-right: 5%;
+		width: 90%;
 	}
 }
-@media screen and (max-width: 640px){
-	#intro
+@media screen and (max-width: 450px){
+	#intro .perfil-container
 	{
-		padding-left: 0%;
-		padding-right: 0%;
-		width: 100%;
+		min-width: 340px;
+		padding-left: 1%;
+		padding-right: 1%;
+		width: 98%;
 	}
-	#intro .perfil .foto
+	#contenido .contenido-container
 	{
-		display: block;
-		width: 100%;
-		text-align: center;
-	}
-	#intro .perfil .datos-intro
-	{
-		display: block;
-		width: 100%;
-		text-align: center;
+		min-width: 340px;
+		padding-left: 1%;
+		padding-right: 1%;
+		width: 98%;
 	}
 }
