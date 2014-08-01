@@ -488,12 +488,11 @@ nav ul li a:selected
 	/* Para escalarla cuando se mueva su ancho */
 	max-width: 100%;
 	height: auto;
+	min-width: 320px;
 }
 #contenido .contenido-container .specs-container 
 {
-	width: 1000px;
-	position: relative;
-	
+
 }
 #contenido .contenido-container .specs-container div /* Es para quitar el espacio fantasma entre divs*/ 
 {
@@ -505,7 +504,7 @@ nav ul li a:selected
 
 #contenido .contenido-container .specs-container .specs-container-col1
 {
-	width: 800px;
+	max-width: 800px;
 }
 #contenido .contenido-container .specs-container .specs-container-col1 .icono
 {
@@ -521,11 +520,13 @@ nav ul li a:selected
 }
 #contenido .contenido-container .specs-container .specs-container-col1 .specs-rende2 .specs-col1
 {
-	width: 100px;
+	min-width: 160px;
+	font-weight: bold;
 } 
 #contenido .contenido-container .specs-container .specs-container-col1 .specs-rende2 .specs-col2
 {
-	width: 700px;
+	min-width: 320px;
+	width: 640px;
 }
 #contenido .contenido-container .specs-container .specs-container-col1 .specs-rende2 .specs-col2 p
 {
@@ -540,21 +541,23 @@ nav ul li a:selected
 }
 #contenido .contenido-container .specs-container .specs-container-col1 .specs-rende3 .specs-col1
 {
-	width: 100px;
-		
+	min-width: 160px;
+	font-weight: bold;
 } 
 #contenido .contenido-container .specs-container .specs-container-col1 .specs-rende3 .specs-col2
 {
-	width: 700px;
+	min-width: 320px;
 }
 #contenido .contenido-container .specs-container .specs-container-col1 .specs-rende3 .specs-col21,
 #contenido .contenido-container .specs-container .specs-container-col1 .specs-rende3 .specs-col22
 {
-	width: 350px;
+	min-width: 320px;
+	width: 320px;
 }
 #contenido .contenido-container .specs-container .specs-col2-container
 {
 	width: 200px;
+	
 }
 /* ----------------------------------------------*/
 #contenido .ParrafoNormal
@@ -628,8 +631,14 @@ footer .pie .version:before
 {
 	content: "- ";
 }
-/*
 
+@media screen and (max-width: 1024px){
+	#contenido .contenido-container .specs-container .specs-container-col1 .specs-rende3 .specs-col2,
+	#contenido .contenido-container .specs-container .specs-container-col1 .specs-rende2 .specs-col2
+	{
+		width: 100%;
+	}
+}
 @media screen and (max-width: 800px){
 	#intro .perfil-container
 	{
@@ -655,21 +664,33 @@ footer .pie .version:before
 		padding-right: 5%;
 		width: 90%;
 	}
+@media screen and (max-width: 710px){
+	#contenido .contenido-container .specs-container .specs-container-col1 .specs-rende3 .specs-col2,
+	#contenido .contenido-container .specs-container .specs-container-col1 .specs-rende2 .specs-col2
+	{
+		width: 100%;
+	}
 }
-@media screen and (max-width: 450px){
+@media screen and (max-width: 420px){
 	#intro .perfil-container
 	{
-		min-width: 340px;
+		min-width: 320px;
 		padding-left: 1%;
 		padding-right: 1%;
 		width: 98%;
 	}
 	#contenido .contenido-container
 	{
-		min-width: 340px;
+		min-width: 320px;
 		padding-left: 1%;
 		padding-right: 1%;
 		width: 98%;
 	}
+	#contenido .contenido-container .specs-container .specs-container-col1 .specs-rende3 .specs-col2,
+	#contenido .contenido-container .specs-container .specs-container-col1 .specs-rende2 .specs-col2
+	{
+		width: 100%;
+		min-width: 320px;
+	}
 }
-*/
+
